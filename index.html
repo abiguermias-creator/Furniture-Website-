@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIROVA</title>
+  <title>Mirova - Interior Landing Page</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
 </head>
 <body>
-
+  <!-- Navbar -->
   <header class="navbar">
-    <h1 class="logo">MIROVA</h1>
+    <h1 class="logo">Mirova</h1>
     <nav>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
@@ -18,131 +18,269 @@
         <li><a href="#">Collections</a></li>
         <li><a href="#">Testimonials</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="#">Indonesia — +62-1560-3240</a></li>
       </ul>
-      <p class="contact-info">Indonesia — info@mirova.design</p>
     </nav>
   </header>
 
-  <main class="container">
-    <!-- Left Panel -->
-    <section class="left-panel">
-      <div class="mission">
-        <h2>Where <em>Silence</em> Shapes the <span class="dash">-</span>  Finest Forms.</h2>
-        <p class="copyright">©2025</p>
+  <!-- Hero (Page 1) -->
+  <div class="hero-content">
+    <h1>Where <em>Silence</em> Shapes the — Finest Forms.
+    <span class="year" style="font-size:0.8rem; color:#171717;">©2025</span>
+    <section class="hero-banner">
+    <div class="product-overlay">
+      <h2>Lumen Oak Dining Table</h2>
+      <p class="category">Dining Table</p>
+      <p class="price">$1,750</p>
+      <p class="description">A sculpted oak table with a seamless matte finish, designed to anchor modern dining spaces.</p>
+      <div class="buttons">
+        <button>View Item</button>
+        <button onclick="addToCart('Lumen Oak Dining Table')">Add to Cart</button>
       </div>
-
-      <div class="featured-product">
-        <img src="https://cdn.cosmos.so/252a57f8-aea8-43c2-bfe5-e38b55127a50?format=webp&w=400" 
-        alt="Lumen Oak Dining Table" />
-        <div class="product-info">
-          <h3>Lumen Oak Dining Table</h3>
-          <p class="price">$1,750</p>
-          <p class="description">
-            A sculptured oak table with a seamless matte finish, designed to anchor modern dining spaces.
-          </p>
-          <div class="buttons">
-            <button>View Item</button>
-            <button onclick="addToCart('Lumen Oak Dining Table')">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Right Panel -->
-    <section class="right-panel">
-      <h2 class="section-title">The Things We Shape.</h2>
-
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="https://images.squarespace-cdn.com/content/v1/549d884ce4b003c6ce1390f6/1697485332574-RX5JQ6EXU4LGH3R9MPNG/CAM_09182023-190-Edit.jpg?format=1000w"
-           alt="Serpentine Chair" />
-          <div class="meta"><h3>Serpentine Chair</h3><p class="price">$1,280</p></div>
-          <p class="description">A sculptural solid wood chair.</p>
-          <button onclick="addToCart('Serpentine Chair')">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/61aQUIg4ECL._AC_UF350,350_QL80_.jpg"
-           alt="Curve Lounge" />
-          <div class="meta"><h3>Curve Lounge</h3><p class="price">$2,450</p></div>
-          <p class="description">Soft curves, warm suede: outdoor & indoor.</p>
-          <button onclick="addToCart('Curve Lounge')">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://i.pinimg.com/236x/85/af/a6/85afa65f33e51ea18e2aa6c2f8dcb836.jpg"
-           alt="Sculpted Stone Form" />
-          <div class="meta"><h3>Sculpted Stone Form</h3><p class="price">$980</p></div>
-          <p class="description">Organic contours in carved stone.</p>
-          <button onclick="addToCart('Sculpted Stone Form')">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://massmoderndesign.com/wp-content/uploads/2025/05/T9A1328-768x512.jpg"
-         alt="Ember Glow Lamp" />
-          <div class="meta"><h3>Ember Glow Lamp</h3><p class="price">$640</p></div>
-          <p class="description">Minimalist light with warmth.</p>
-          <button onclick="addToCart('Ember Glow Lamp')">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://static.zara.net/assets/public/359a/9866/134149dc8c03/fbe9f4db8d68/1656503800267/1656503800267.jpg?ts=1693756211504&w=560" 
-          alt="Timber Side Table" />
-          <div class="meta"><h3>Timber Side Table</h3><p class="price">$1,120</p></div>
-          <p class="description">Solid wood construction.</p>
-          <button onclick="addToCart('Timber Side Table')">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://cdn.globus.pictures/fr/private/2000/1500/cb36c64159f71e02d2d26d812373d05295c70dcf170e590e95982e2037ecd828.jpeg::284:317/1711:1176?bottom=0.18169398907103826&fitMode=auto&h=2489&left=0.09836065573770492&right=0.09836065573770492&top=0.19672131147540983&transX=50&transY=50&w=2489" 
-          alt="Cloud Slope Sofa" />
-          <div class="meta"><h3>Cloud Slope Sofa</h3><p class="price">$3,680</p></div>
-          <p class="description">Soft, cloud-like form in boucle.</p>
-          <button onclick="addToCart('Cloud Slope Sofa')">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQoPc-mUvasOn8nCZ6CytXdSibyk93NVvA235-d-L1rULDhehl" 
-          alt="Organic Branch Chair" />
-          <div class="meta"><h3>Organic Branch Chair</h3><p class="price">$1,540</p></div>
-          <p class="description">Hand-carved wood, inspired by nature.</p>
-          <button onclick="addToCart('Organic Branch Chair')">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://assets.sohohome.com/cdn-cgi/image/fit=crop,format=auto,quality=75,width=300,height=400/images/original/188283-79989807-listingjpg.jpg" 
-          alt="Terra Low Table" />
-          <div class="meta"><h3>Terra Low Table</h3><p class="price">$2,280</p></div>
-          <p class="description">Solid wood, grounded design.</p>
-          <button onclick="addToCart('Terra Low Table')">Add to Cart</button>
-        </div>
-      </div>
-
-      <section class="testimonials">
-  <div class="quote-box">
-    <p>"The tone, the texture, the weight in everything feels intentional. It all makes sense."</p>
-    <footer>— Calvin Bloom</footer>
-  </div>
-  <div class="quote-box">
-    <p>"I was drawn to the shapes, but I stayed for the comfort. A perfect balance of art and function."</p>
-    <footer>— Mercer Kyle</footer>
+      <div class="badge">Trusted by Worldwide</div>
+    </div>
   </div>
 </section>
-  </main>
 
-  <footer>
-    <p id="cart">Cart: 0 items</p>
+  <!-- Philosophy & Values (Page 2) -->
+  <section class="philosophy-section">
+    <div class="philosophy-top">
+      <h3>Shaping Spaces With<em>Meaning</em> — One Thoughtful Piece at a Time.</h3>
+      <p>
+        Our philosophy is simple: every piece must serve both beauty and purpose. We collaborate with master artisans
+        and use premium, ethically sourced materials to create furniture that feels effortless, timeless, and exquisitely
+        modern. Each silhouette, curve, and finish is refined to harmonize with the luxury.
+      </p>
+      <a href="#" class="detail-link">SEE DETAIL ⟶</a>
+    </div>
+
+    <div class="philosophy-strip">
+      ✳ ELEVATED DESIGN ✳ ENDURING QUALITY ✳ CRAFTED FOR MODERN LIVING ✳
+     </div>
+   <section class="design-section">
+  <div class="design-header">
+    <h3>Design Begins With You — and Ends in <em>Timeless Form.</em></h3>
+    <p>Where every material, and finish is chosen not just to function but to create a living experience.</p>
+    <a href="#" class="detail-link">SEE DETAIL ⟶</a>
+  </div>
+
+  <div class="design-content">
+    <div class="design-left">
+      <img src="https://m.media-amazon.com/images/I/71ZmPJVP9iL.jpg" alt="Crafted by hand">
+      <p class="crafted-label">CRAFTED BY HAND<br>SINCE 20-25</p>
+    </div>
+
+    <div class="design-right">
+      <div class="value-block">
+        <h4>Precision Craftsmanship</h4>
+        <p> Each piece begins with a human touch, the hands of artisans who translate vision into form, balancing tradition with modern engineering.</p>
+      </div>
+      <div class="value-block">
+        <h4>Premium Materials</h4>
+        <p>We select only materials that age with beauty: solid woods, brushed metals, textured fabrics — elements that bring depth, and warmth.</p>
+      </div>
+      <div class="value-block">
+        <h4>Minimalist Aesthetics</h4>
+        <p>Every line is intentional, every proportion balanced. A study in restraint that transforms simplicity into an expression of quiet luxury.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-scroll-banner">
+    OBJECTS SHAPED WITH INTENTION · TIMELESS PIECES FOR EVERY SPACE · OBJECTS SHAPED WITH INTENTION · TIMELESS PIECES FOR EVERY SPACE
+  </div>
+</section>
+
+      
+  <!-- Product Showcase (Page 3) -->
+  <section class="product-showcase">
+    <h2 class="section-title"><em>The Things We Shape</em></h2>
+     <div class="search-bar">
+    <input type="text" placeholder="Search products..." />
+    <button type="submit">Search</button>
+  </div>
+    <div class="filter-bar">
+    <select>
+      <option>All</option>
+    </select>
+
+    <select>
+      <option>Material</option>
+      <option>Wood</option>
+      <option>Stone</option>
+      <option>Metal</option>
+    </select>
+
+    <select>
+      <option>Price</option>
+      <option>Under $1,000</option>
+      <option>$1,000–$2,000</option>
+      <option>Above $2,000</option>
+    </select>
+
+    <select>
+      <option>Style</option>
+      <option>Minimalist</option>
+      <option>Organic</option>
+      <option>Sculptural</option>
+    </select>
+
+    <select>
+      <option>Availability</option>
+      <option>In Stock</option>
+      <option>Pre-Order</option>
+<option>Sold Out</option>
+    </select>
+  </div>
+
+  <div class="product-grid">
+    <!-- 8 product cards go here -->
+  </div>
+</section>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.squarespace-cdn.com/content/v1/549d884ce4b003c6ce1390f6/1697485332574-RX5JQ6EXU4LGH3R9MPNG/CAM_09182023-190-Edit.jpg?format=1000w" 
+        alt="Serpentine Chair" />
+        <h4>Serpentine Chair</h4>
+        <p class="price">$1,280</p>
+        <p class="description">A sculptural, fluid wood silhouette.</p>
+        <button onclick="addToCart('Serpentine Chair')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61aQUIg4ECL._AC_UF350,350_QL80_.jpg"
+         alt="Curve Lounge" />
+        <h4>Curve Lounge</h4>
+        <p class="price">$2,450</p>
+        <p class="description">Soft curves, warm wooden balance.</p>
+        <button onclick="addToCart('Curve Lounge')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/236x/85/af/a6/85afa65f33e51ea18e2aa6c2f8dcb836.jpg"
+         alt="Sculpted Stone Form" />
+        <h4>Sculpted Stone Form</h4>
+        <p class="price">$980</p>
+        <p class="description">Organic contours in carved stone.</p>
+        <button onclick="addToCart('Sculpted Stone Form')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://massmoderndesign.com/wp-content/uploads/2025/05/T9A1328-768x512.jpg"
+        alt="Ember Glow Lamp" />
+        <h4>Ember Glow Lamp</h4>
+        <p class="price">$640</p>
+        <p class="description">Minimal light, quiet warmth.</p>
+        <button onclick="addToCart('Ember Glow Lamp')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://static.zara.net/assets/public/359a/9866/134149dc8c03/fbe9f4db8d68/1656503800267/1656503800267.jpg?ts=1693756211504&w=560" 
+        alt="Timber Side Table" />
+        <h4>Timber Side Table</h4>
+        <p class="price">$1,120</p>
+        <p class="description">Solid wood with clean geometry.</p>
+        <button onclick="addToCart('Timber Side Table')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn.globus.pictures/fr/private/2000/1500/cb36c64159f71e02d2d26d812373d05295c70dcf170e590e95982e2037ecd828.jpeg::284:317/1711:1176?bottom=0.18169398907103826&fitMode=auto&h=2489&left=0.09836065573770492&right=0.09836065573770492&top=0.19672131147540983&transX=50&transY=50&w=2489" 
+        alt="Cloud Slope Sofa" />
+        <h4>Cloud Slope Sofa</h4>
+        <p class="price">$3,680</p>
+        <p class="description">Plush curves, modern ease.</p>
+        <button onclick="addToCart('Cloud Slope Sofa')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQoPc-mUvasOn8nCZ6CytXdSibyk93NVvA235-d-L1rULDhehl"
+         alt="Organic Branch Chair" />
+        <h4>Organic Branch Chair</h4>
+        <p class="price">$1,540</p>
+        <p class="description">Bold, branch-like artistry.</p>
+        <button onclick="addToCart('Organic Branch Chair')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://assets.sohohome.com/cdn-cgi/image/fit=crop,format=auto,quality=75,width=300,height=400/images/original/188283-79989807-listingjpg.jpg" 
+        alt="Terra Low Table" />
+        <h4>Terra Low Table</h4>
+        <p class="price">$2,280</p>
+        <p class="description">Smooth, grounded wood form.</p>
+        <button onclick="addToCart('Terra Low Table')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (Page 4) -->
+  <section class="testimonial-section">
+    <h2>Shaped by Those Who Live With It.</h2>
+    <p class="testimonial-intro">
+      Each piece becomes part of a story — quietly present, deeply felt, and lived in every day.
+    </p>
+    <div class="testimonial-grid">
+      <div class="testimonial-box">
+        <p>“The form, the texture, the weight — everything feels intentional. It brings warmth.”</p>
+        <footer>— Calvin Kleam, Homeowner</footer>
+      </div>
+      <div class="testimonial-box">
+        <p>“I was drawn to the shapes, but I stayed for the comfort. A perfect balance of art and function.”</p>
+        <footer>— Scarlett Kylie, Creative Director</footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div>
+        <h4>GENERAL</h4>
+        <ul>
+          <li>Home</li><li>About</li><li>Collections</li><li>Testimonials</li><li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <h4>SERVICES</h4>
+        <ul>
+          <li>Consultation</li><li>Custom Pieces</li><li>Maintenance</li>
+        </ul>
+      </div>
+      <div>
+        <h4>SOCIAL MEDIA</h4>
+        <ul>
+          <li>Instagram</li><li>WhatsApp</li><li>LinkedIn</li><li>YouTube</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-message">WE'D LOVE TO HELP SHAPE YOUR SPACE.</p>
+        <p class="footer-email">hello@mirovastudio.com</p>
+      </div>
+      <div class="footer-image">
+        <img src="interior-footer.jpg" alt="Interior space" />
+      </div>
+    </div>
   </footer>
 
+  <!-- Availability Banner (below Page 4) -->
+  <section class="availability-banner">
+    <div class="availability-content">
+      <hr />
+      <h2>Available for new projects</h2>
+      <p>Feel free to reach out and let's get started!</p>
+      <div class="diamond-icon">◆</div>
+      <p class="signature">OneWeekWonders</p>
+    </div>
+  </section>
+
+  <!-- Cart logic -->
   <script>
     let cartCount = 0;
     function addToCart(productName) {
       cartCount++;
-      document.getElementById('cart').textContent =
-        `Cart: ${cartCount} item${cartCount > 1 ? 's' : ''}`;
-      console.log(`${productName} added to cart`);
+      console.log(`${productName} added to cart. Cart: ${cartCount}`);
     }
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
 
