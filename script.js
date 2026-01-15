@@ -1,6 +1,10 @@
-let count = 0;
+let cartCount = 0;
 
-function addToCart() {
-    count++;
-    document.getElementById("cart").textContent = "Cart: " + count + " items";
+function addToCart(productName) {
+  cartCount++;
+  document.getElementById('cart').textContent =
+    `Cart: ${cartCount} item${cartCount > 1 ? 's' : ''}`;
+  console.log(`${productName} added to cart`);
 }
+
+
